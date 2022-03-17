@@ -1,0 +1,283 @@
+/*---------- horizontalmenu ----------
+--------------------------------------*/
+.ah-tab-wrapper {
+  position: relative;
+
+  & .ah-tab {
+    /* border-bottom: 1px solid #ebebeb; */
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      bottom: 0;
+      content: "";
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      z-index: 1;
+      transition: opacity 0.3s;
+    }
+    &::before {
+      left: -100%;
+      width: 30px;
+      background: -moz-linear-gradient(
+        right,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(18, 18, 18, 1) 70%,
+        rgba(18, 18, 18, 1) 99%
+      );
+      background: -webkit-linear-gradient(
+        right,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(18, 18, 18, 1) 70%,
+        rgba(18, 18, 18, 1) 99%
+      );
+      background: linear-gradient(
+        to left,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(18, 18, 18, 1) 70%,
+        rgba(18, 18, 18, 1) 99%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+
+      @media (--viewport-md) {
+        width: 50px;
+      }
+    }
+    &::after {
+      right: 100%;
+      width: 80px;
+      background: -moz-linear-gradient(
+        left,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(18, 18, 18, 1) 40%,
+        rgba(18, 18, 18, 1) 99%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(18, 18, 18, 1) 40%,
+        rgba(18, 18, 18, 1) 99%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(18, 18, 18, 1) 40%,
+        rgba(18, 18, 18, 1) 99%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+    }
+
+    &.ah-tab-overflow-left::before {
+      opacity: 1;
+      left: 0;
+    }
+
+    &.ah-tab-overflow-right::after {
+      opacity: 1;
+      right: 0;
+    }
+
+    & .ah-tab-item {
+      color: var(--accentLight);
+      cursor: pointer;
+      display: inline-block;
+      letter-spacing: normal;
+      transition: all 0.3s;
+      text-decoration: none;
+      font-size: 1.375rem;
+
+      &[data-ah-tab-active="true"] {
+        color: var(--primary);
+      }
+    }
+
+    & > .ah-tab-item {
+      border-bottom: 2px solid transparent;
+      margin-right: 2rem;
+      padding: 0.75rem 0;
+
+      &:hover {
+        border-bottom: 2px solid #8b8b8b;
+      }
+
+      &[data-ah-tab-active="true"] {
+        border-bottom-color: var(--primary);
+      }
+    }
+  }
+
+  & .ah-tab-overflow-wrapper {
+    position: absolute;
+    width: 43px;
+    height: 100%;
+    right: 100%;
+    opacity: 0;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+
+    &[data-ah-tab-active="true"] {
+      right: 0;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    &:hover {
+      z-index: 2;
+    }
+
+    &:hover .ah-tab-overflow-menu {
+      opacity: 1;
+    }
+
+    & .ah-tab-overflow-menu {
+      background: transparent url(../images/ah-tab-overflow-menu.svg) center
+        center no-repeat;
+      background-size: 18px;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      cursor: pointer;
+      transition: opacity 0.3s;
+      opacity: 0.7;
+    }
+
+    &:hover .ah-tab-overflow-list {
+      top: 99%;
+      padding: 10px 0;
+      opacity: 1;
+    }
+
+    & .ah-tab-overflow-list {
+      position: absolute;
+      top: -10000%;
+      right: 0;
+      text-align: left;
+      background-color: var(--dark300);
+      border: 1px solid var(--dark300);
+      box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.09);
+      list-style: none;
+      transition: opacity 0.3s;
+      opacity: 0;
+      max-width: 290px;
+
+      &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: -14px;
+        right: 14px;
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-bottom-color: var(--dark300);
+      }
+      &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: -16px;
+        right: 13px;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-bottom-color: var(--dark300);
+      }
+
+      &:hover {
+        display: block;
+      }
+
+      & > .ah-tab-item {
+        border-left: 3px solid transparent;
+        display: block;
+        overflow: hidden;
+        padding: 10px 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-decoration: none;
+        color: var(--accentLight);
+
+        &:hover {
+          border-left-color: #8b8b8b;
+        }
+
+        &[data-ah-tab-active="true"] {
+          border-left-color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+.ah-tab-content-wrapper {
+  margin: 1.875rem 0 0;
+
+  & .ah-tab-content {
+    display: none;
+    padding: 0px;
+
+    &[data-ah-tab-active="true"] {
+      display: block;
+    }
+
+    &.content_area {
+      --flow-spacer: 1.75rem;
+      max-width: 930px;
+      & p {
+        font-size: 1rem;
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        & span {
+          display: block;
+          font-weight: var(--fw-smbold);
+          margin-bottom: 0.75rem;
+        }
+      }
+
+      & .list {
+        list-style: disc;
+        padding-left: 1.125rem;
+
+        & li + li {
+          padding-top: 0.5rem;
+        }
+
+        & li {
+          font-size: 1rem;
+          font-size: clamp(1rem, 2vw, 1.25rem);
+        }
+      }
+
+      & .quote_box {
+        max-width: 750px;
+        padding: 1.25rem;
+        border-radius: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5rem;
+        flex-direction: column;
+        margin-top: 5rem;
+        text-align: center;
+
+        @media (--viewport-sm) {
+          padding: 1.25rem 1.875rem;
+          flex-direction: row;
+          text-align: left;
+        }
+
+        & img {
+          max-width: 54px;
+        }
+
+        & p {
+          font-size: 1rem;
+          font-size: clamp(1rem, 2vw, 1.125rem);
+        }
+      }
+    }
+  }
+}

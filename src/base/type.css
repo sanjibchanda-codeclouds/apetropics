@@ -1,0 +1,77 @@
+/*---------- typography ----------
+----------------------------------*/
+:--heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: var(--fw-regular);
+  line-height: 1.2;
+}
+
+/* h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  @media (--viewport-xl) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  @media (--viewport-xl) {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  @media (--viewport-xl) {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  @media (--viewport-xl) {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+} */
+
+/*custom typography*/
+
+h2 {
+  font-size: clamp(2.5rem, 6vw, 3rem);
+  font-family: var(--ff-heading);
+}
+h3 {
+  font-size: clamp(2.25rem, 5vw, 2.75rem);
+  font-family: var(--ff-heading);
+}
+h4 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-family: var(--ff-heading);
+}
+h5 {
+  font-size: clamp(1.5rem, 4vw, 1.875rem);
+  font-family: var(--ff-heading);
+}
+h6 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-family: var(--ff-base);
+}
+p {
+  margin: 0;
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}

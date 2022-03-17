@@ -1,0 +1,247 @@
+/*---------- text ----------
+------------------------------*/
+.fs-xs {
+  font-size: 0.75rem;
+}
+.fs-sm {
+  font-size: 0.875rem;
+}
+.fs-base {
+  font-size: 1rem;
+}
+.fs-md {
+  font-size: 1.125rem;
+}
+.fs-lg {
+  font-size: 1.25rem;
+}
+.fs-xl {
+  font-size: 1.5rem;
+}
+.ff-base {
+  font-family: var(--ff-base);
+}
+.ff-heading {
+  font-family: var(--ff-heading);
+}
+
+.fw-thin {
+  font-weight: 100;
+}
+
+.fw-exlight {
+  font-weight: 200;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-smbold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-exbold {
+  font-weight: 800;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+@media (--viewport-sm) {
+  .fw-sm-thin {
+    font-weight: 100;
+  }
+
+  .fw-sm-exlight {
+    font-weight: 200;
+  }
+
+  .fw-sm-light {
+    font-weight: 300;
+  }
+
+  .fw-sm-regular {
+    font-weight: 400;
+  }
+
+  .fw-sm-medium {
+    font-weight: 500;
+  }
+
+  .fw-sm-smbold {
+    font-weight: 600;
+  }
+
+  .fw-sm-bold {
+    font-weight: 700;
+  }
+
+  .fw-sm-exbold {
+    font-weight: 800;
+  }
+
+  .fw-sm-black {
+    font-weight: 900;
+  }
+}
+@media (--viewport-md) {
+  .fw-md-thin {
+    font-weight: 100;
+  }
+
+  .fw-md-exlight {
+    font-weight: 200;
+  }
+
+  .fw-md-light {
+    font-weight: 300;
+  }
+
+  .fw-md-regular {
+    font-weight: 400;
+  }
+
+  .fw-md-medium {
+    font-weight: 500;
+  }
+
+  .fw-md-smbold {
+    font-weight: 600;
+  }
+
+  .fw-md-bold {
+    font-weight: 700;
+  }
+
+  .fw-md-exbold {
+    font-weight: 800;
+  }
+
+  .fw-md-black {
+    font-weight: 900;
+  }
+}
+@media (--viewport-lg) {
+  .fw-lg-thin {
+    font-weight: 100;
+  }
+
+  .fw-lg-exlight {
+    font-weight: 200;
+  }
+
+  .fw-lg-light {
+    font-weight: 300;
+  }
+
+  .fw-lg-regular {
+    font-weight: 400;
+  }
+
+  .fw-lg-medium {
+    font-weight: 500;
+  }
+
+  .fw-lg-smbold {
+    font-weight: 600;
+  }
+
+  .fw-lg-bold {
+    font-weight: 700;
+  }
+
+  .fw-lg-exbold {
+    font-weight: 800;
+  }
+
+  .fw-lg-black {
+    font-weight: 900;
+  }
+}
+@media (--viewport-xl) {
+  .fw-xl-thin {
+    font-weight: 100;
+  }
+
+  .fw-xl-exlight {
+    font-weight: 200;
+  }
+
+  .fw-xl-light {
+    font-weight: 300;
+  }
+
+  .fw-xl-regular {
+    font-weight: 400;
+  }
+
+  .fw-xl-medium {
+    font-weight: 500;
+  }
+
+  .fw-xl-smbold {
+    font-weight: 600;
+  }
+
+  .fw-xl-bold {
+    font-weight: 700;
+  }
+
+  .fw-xl-exbold {
+    font-weight: 800;
+  }
+
+  .fw-xl-black {
+    font-weight: 900;
+  }
+}
+@media (--viewport-xxl) {
+  .fw-xxl-thin {
+    font-weight: 100;
+  }
+
+  .fw-xxl-exlight {
+    font-weight: 200;
+  }
+
+  .fw-xxl-light {
+    font-weight: 300;
+  }
+
+  .fw-xxl-regular {
+    font-weight: 400;
+  }
+
+  .fw-xxl-medium {
+    font-weight: 500;
+  }
+
+  .fw-xxl-smbold {
+    font-weight: 600;
+  }
+
+  .fw-xxl-bold {
+    font-weight: 700;
+  }
+
+  .fw-xxl-exbold {
+    font-weight: 800;
+  }
+
+  .fw-xxl-black {
+    font-weight: 900;
+  }
+}

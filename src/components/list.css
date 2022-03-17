@@ -1,0 +1,29 @@
+/*---------- list ----------
+----------------------------*/
+.checkList {
+  --flow-spacer: 1em;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  & li {
+    position: relative;
+    padding-left: 2.5rem;
+    color: var(--accentLight);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background: url(../images/checkmark.svg) no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+
+    & span {
+      font-weight: var(--fw-bold);
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/*---------- fonts-icon ----------
+------------------------------------*/
+
+.smile-bold,
+.home {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.smile-bold,
+.home {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.smile-bold:before {
+  content: "\f58c";
+}
+
+.home:before {
+  content: "\f015";
+}

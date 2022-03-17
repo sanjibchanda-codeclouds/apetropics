@@ -1,0 +1,49 @@
+/*---------- footer ----------
+------------------------------*/
+.section_footer {
+  padding: 3rem 0 2.5rem;
+  @media (--viewport-xl) {
+    padding: 9rem 0 2.5rem;
+  }
+  &.footer_top {
+    margin-top: -6rem;
+    padding: 9rem 0 2.5rem;
+  }
+
+  & .footer_box {
+    --flow-spacer: 1.25rem;
+
+    & .title {
+      font-size: 1.25rem;
+      font-weight: var(--fw-bold);
+    }
+
+    & .links {
+      list-style: none;
+      & li + li {
+        padding-top: 0.75rem;
+      }
+      & li {
+        font-weight: var(--fw-smbold);
+
+        & a {
+          color: var(--accentLight);
+          text-decoration: none;
+
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+
+    @media (--viewport-lg) {
+      &.description {
+        max-width: 280px;
+      }
+    }
+  }
+  & .copyright {
+    margin-top: 3.75rem;
+  }
+}

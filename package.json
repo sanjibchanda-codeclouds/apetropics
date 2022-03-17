@@ -1,0 +1,19 @@
+{
+  "name": "postcss-overlay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/style.css --dir dist/css/ --watch"
+  },
+  "author": "sanjib chanda",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.0.16",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.2.3"
+  },
+  "dependencies": {},
+  "description": ""
+}

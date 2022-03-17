@@ -1,0 +1,64 @@
+/*---------- Accordian ----------
+---------------------------------*/
+.accordion_box {
+  padding: 3.75rem 0 0;
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--primary);
+
+    & li:first-child {
+      border-top: 0;
+    }
+
+    & .slide_box {
+      border-top: 1px solid var(--primary);
+      background: var(--secondary);
+
+      & .box_title {
+        font-family: var(--ff-display);
+        letter-spacing: 1px;
+        color: var(--primary);
+        padding: 1.125rem;
+        cursor: pointer;
+        position: relative;
+
+        &:after {
+          content: "\2b";
+          color: var(--primary);
+          font-size: 0.75rem;
+          line-height: 1;
+          font-family: "FontAwesome";
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        & p {
+          font-size: 0.75rem;
+        }
+      }
+      &:hover {
+        background: var(--clr-white);
+      }
+      &.active {
+        background: var(--clr-white);
+        & .box_title:after {
+          content: "\f068";
+          font-family: "FontAwesome";
+        }
+      }
+    }
+  }
+}
+
+.hide_box {
+  padding: 0 1.25rem 1.25rem;
+
+  & p {
+    font-size: 1rem;
+  }
+}

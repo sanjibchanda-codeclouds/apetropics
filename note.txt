@@ -1,0 +1,14 @@
+firstly install npm to type in cmd :
+=> npm init
+
+then install postcss-cli:
+=> npm install --save-dev postcss postcss-cli
+=> npm i -D postcss postcss-cli
+(anyone you can run)
+
+to import postcss : 
+=> npm i -D postcss-import
+then creat postcss.congif.js and create some config
+
+to instal cssnano to minify css :
+=> npm i -D cssnano postcss-preset-env

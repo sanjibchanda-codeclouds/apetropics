@@ -1,0 +1,72 @@
+/*---------- container ----------
+--------------------------------------*/
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: var(--gutter-x, 0.75rem);
+  padding-left: var(--gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (--viewport-sm) {
+  .container {
+    max-width: 33.75rem;
+  }
+}
+@media (--viewport-md) {
+  .container {
+    max-width: 45rem;
+  }
+}
+@media (--viewport-lg) {
+  .container {
+    max-width: 60rem;
+  }
+}
+@media (--viewport-xl) {
+  .container {
+    max-width: 71.25rem;
+  }
+}
+@media (--viewport-xxl) {
+  .container {
+    max-width: 82.5rem;
+  }
+}
+
+.container-max-sm,
+.container-max-md,
+.container-max-lg,
+.container-max-xl,
+.container-max-xxl {
+  padding-right: var(--gutter-x, 0.75rem);
+  padding-left: var(--gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-max-sm {
+  max-width: 35rem;
+}
+
+.container-max-md {
+  max-width: 45rem;
+}
+
+.container-max-lg {
+  max-width: 48rem;
+}
+
+.container-max-xl {
+  max-width: 71.25rem;
+}
+
+.container-max-xxl {
+  max-width: 76.25rem;
+}
+
+/*---custom style---*/
+.container {
+  max-width: 75rem;
+}

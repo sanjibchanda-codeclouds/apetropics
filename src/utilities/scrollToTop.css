@@ -1,0 +1,23 @@
+/*.....scroll to top
+......................*/
+.scrollup {
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  padding: 0.25rem;
+  display: none;
+  z-index: 9;
+
+  & i {
+    padding: 0;
+  }
+}

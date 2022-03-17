@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="refresh" content="5; url=https://www.google.com/" />     -->
+    <meta name="description" content="Apetropics" />
+    <meta name="keywards" content="Apetropics" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>Apetropics</title>
+
+    <!--css file-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--preloader start-->
+    <div id="preloader"><div id="loader"></div></div>
+
+    <!--scroll to top-->
+    <a href="#" class="scrollup"><i class="fas fa-arrow-up"></i></a>
+
+    <!--section header-->
+    <div class="header bg-dark500 text-accentLight">
+      <div id="header">
+        <div class="container header_wrap">
+          <!-- navigation menu start -->
+          <nav class="nav-menu nav-menu-left">
+            <div class="close-nav-menu"><i class="fas fa-times"></i></div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="index.html">Oil</a>
+              </li>
+              <li class="menu-item">
+                <a href="corporate.html">capsules</a>
+              </li>
+              <li class="menu-item">
+                <a href="about.html">sleep-aid</a>
+              </li>
+              <li class="menu-item">
+                <a href="other-services.html">tropicals</a>
+              </li>
+
+              <div class="w-100 d-block d-lg-none">
+                <li class="menu-item">
+                  <a href="contact.html">Gummies</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contact.html">Isolate</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Broad Spectrum</a>
+                </li>
+                <li class="menu-item">
+                  <a href="cart.html"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                    ><span class="cart-badge">2</span></a
+                  >
+                </li>
+              </div>
+            </ul>
+          </nav>
+          <!-- navigation menu end -->
+
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo-white.png" alt="logo-white" class="logo"
+            /></a>
+          </div>
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+          <div class="menu-overlay"></div>
+          <!-- navigation menu start -->
+          <nav class="nav-menu nav-menu-right">
+            <!-- <div class="close-nav-menu"><i
+              class="fas fa-times"
+            ></i>
+            </div> -->
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="contact.html">Gummies</a>
+              </li>
+              <li class="menu-item">
+                <a href="contact.html">Isolate</a>
+              </li>
+              <!-- <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Isolate <i class="fas fa-angle-down"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">list 1</a></li>
+                  <li class="menu-item"><a href="#">List 2</a></li>
+                </ul>
+              </li> -->
+              <li class="menu-item">
+                <a href="#">Broad Spectrum</a>
+              </li>
+              <li class="menu-item">
+                <a href="cart.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                  ><span class="cart-badge">2</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- navigation menu end -->
+        </div>
+      </div>
+    </div>
+
+    <!--section banner-->
+    <section class="section_banner header_spacer bg-dark400">
+      <div class="container text-center flow">
+        <h4>Checkout</h4>
+      </div>
+    </section>
+
+    <!--section checkout-->
+    <section class="section_checkout bg-dark500">
+      <div class="container flow">
+        <div class="checkout_wrap grid cols-md-2 gg-5">
+          <div class="cols">
+            <form class="form_container">
+              <p class="fs-sm">
+                Have a coupon? <a href="#">Click here to enter your code</a>
+              </p>
+              <h5 class="heading">Billing Details</h5>
+              <div class="form-group">
+                <label for="name" class="form-label"
+                  >Country <span>*</span></label
+                >
+                <select class="form-control" id="">
+                  <option>State</option>
+                  <option>United states</option>
+                </select>
+              </div>
+
+              <div class="form_area grid cols-sm-2 gg-4">
+                <div class="form-group">
+                  <label for="name" class="form-label"
+                    >First Name <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="name" class="form-label"
+                    >Last Name <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="StreetAddress" class="form-label"
+                  >Street Address <span>*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Street Address"
+                />
+              </div>
+              <div class="form_area grid cols-sm-3 gg-4">
+                <div class="form-group">
+                  <label for="City" class="form-label"
+                    >City <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    placeholder="Enter City"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="State" class="form-label"
+                    >State <span>*</span></label
+                  >
+                  <select class="form-control" id="">
+                    <option>State</option>
+                    <option>Kolkata</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="Zip" class="form-label"
+                    >Zip Code<span>*</span></label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id=""
+                    placeholder="Zip Code"
+                  />
+                </div>
+              </div>
+              <div class="form_area grid cols-sm-2 gg-4">
+                <div class="form-group">
+                  <label for="email" class="form-label"
+                    >Email <span>*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id=""
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="Phone" class="form-label"
+                    >Phone <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    placeholder="Phone"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Zip" class="form-label"
+                  >Billing same as shipping</label
+                >
+                <div class="form-check">
+                  <input type="radio" id="option7" name="selector2" />
+                  <label for="option7">Yes</label>
+                  <div class="check"></div>
+                </div>
+                <div class="form-check">
+                  <input type="radio" id="option8" name="selector2" />
+                  <label for="option8">no</label>
+                  <div class="check"></div>
+                </div>
+              </div>
+
+              <h5 class="heading">Payment Details</h5>
+
+              <div class="form-group">
+                <label for="email" class="form-label"
+                  >Card Number <span>*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Card Number"
+                />
+              </div>
+
+              <div class="form_area grid cols-sm-3 gg-4">
+                <div class="form-group">
+                  <label for="birthdate" class="form-label"
+                    >Expiry Month: <span>*</span></label
+                  >
+                  <select class="form-control" id="">
+                    <option>date</option>
+                    <option>12</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="birthdate" class="form-label"
+                    >Expiry Year: <span>*</span></label
+                  >
+                  <select class="form-control" id="">
+                    <option>Year</option>
+                    <option>2020</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="Phone" class="form-label"
+                    >CVV: <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    placeholder="CVV"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form_check">
+                  <label for="cbx" class="label-cbx">
+                    <input id="cbx" type="checkbox" class="invisible" />
+                    <div class="checkbox">
+                      <svg width="24px" height="24px" viewBox="0 0 20 20">
+                        <path
+                          d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                        ></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span
+                      >By clicking the “Complete Order” button, you agree to
+                      APETROPICS’s Website Terms and Privacy Policy.</span
+                    >
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="cols d-flex justify-content-center justify-content-md-end"
+          >
+            <div class="summary_wrap">
+              <div class="summary_box bg-dark400">
+                <h5 class="heading text-center">Order summary</h5>
+                <div class="summary_content">
+                  <ul class="summary_list">
+                    <li>Products</li>
+                    <li>CBD Mint Flavor 750mg <span>$78.00</span></li>
+                    <li>CBD Lemon Flavor 2500mg <span>$20.00</span></li>
+                    <li>CBD Gummies 750mg <span>$31.00</span></li>
+                    <li>Subtotal <span>$168.00</span></li>
+                    <li>Shipping <span>$5.00</span></li>
+                    <li>Total <span class="fs-xl">$173.00</span></li>
+                  </ul>
+                  <div class="form_container">
+                    <div class="form-group">
+                      <div class="form_check">
+                        <label for="cbx2" class="label-cbx">
+                          <input id="cbx2" type="checkbox" class="invisible" />
+                          <div class="checkbox">
+                            <svg width="24px" height="24px" viewBox="0 0 20 20">
+                              <path
+                                d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                              ></path>
+                              <polyline points="4 11 8 15 16 6"></polyline>
+                            </svg>
+                          </div>
+                          <span
+                            ><span>SUBSCRIBE & SAVE</span><br />
+                            (reships every 30 days)</span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary w-100">
+                        Complete Order
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-center">
+                <img src="images/secure.png" alt="secure" class="secure" />
+                Secure 256-bit SSL encryption
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="moneyback_wrap">
+          <div class="moneyback_box flow">
+            <h5>Strong As an Ape</h5>
+            <h6 class="fw-bold">Full Money Back 120-Day Guarantee</h6>
+            <div class="moneyback_tab flow">
+              <p>
+                Apetropics is committed to offering the highest quality wellness
+                products. All Apetropics are third party tested for purity,
+                potency and efficiency. They are made in the USA and certified
+                by Good Manufacturing Practices (GMP), which is the highest
+                standard of testing in the industry.
+              </p>
+              <p>
+                We are confident that you’ll love our products. But if for any
+                reason, or no reason at all, you are unsatisfied simply return
+                it within 120 days for a full refund - guaranteed. If you have
+                any questions or concerns about your order, simply call us at -
+                877-227-8944 - or email us care@apetropics.com and our friendly
+                apes will be happy to help!
+              </p>
+            </div>
+            <img src="images/moneyback.png" alt="moneyback" class="moneyback" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--section footer-->
+    <section class="section_footer bg-dark400">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4">
+            <div class="footer_box description flow">
+              <img src="images/logo-white.png" alt="logo" class="logo" />
+              <p>
+                *These statements have not been evaluated by the FDA. This
+                product is not intended to diagnose, treat, cure or prevent any
+                disease.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row gy-5">
+              <div class="col-sm-6 col-md-4">
+                <div class="footer_box flow">
+                  <p class="title">Apetropics For Sale</p>
+                  <ul class="links">
+                    <li><a href="#">Apetropics Genius Gummies</a></li>
+                    <li><a href="#">Apetropics Sleep Gummies</a></li>
+                    <li><a href="#">Apetropics Relax Gummies</a></li>
+                    <li><a href="#">Apetropics Acuity Capsules</a></li>
+                    <li><a href="#">Apetropics Clarity Capsules</a></li>
+                    <li><a href="#">Apetropics 1500mg CBD Oil</a></li>
+                    <li><a href="#">Apetropics 2500mg CBD Oil</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="footer_box flow">
+                  <p class="title">Cbd Products For Sale</p>
+                  <ul class="links">
+                    <li><a href="#">SHOP ALL</a></li>
+                    <li><a href="#">CUSTOMER CARE</a></li>
+                    <li><a href="#">TERMS OF SALE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                  </ul>
+                  <p class="title">CONTACT US</p>
+                  <ul>
+                    <li>
+                      EMAIL:
+                      <span class="d-block ds-sm">care@revive365cbd.com</span>
+                    </li>
+                    <li>
+                      PHONE: <span class="d-block ds-sm">833-331-4551</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <div class="footer_box flow">
+                  <p class="title">Info</p>
+
+                  <p>
+                    This product should be used only as directed on the label.
+                    It should not be used if you are pregnant or nursing.
+                    Consult with a physician before use if you have a serious
+                    medical condition or use prescription medications. A
+                    Doctor’s advice should be sought before using this and any
+                    supplemental dietary product.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-center">
+          <p>© 2022 APETROPICS. All Rights Reserved Worldwide</p>
+        </div>
+      </div>
+    </section>
+
+    <!--js file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sidebar_menu.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

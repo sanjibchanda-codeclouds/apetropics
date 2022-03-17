@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="refresh" content="5; url=https://www.google.com/" />     -->
+    <meta name="description" content="" />
+    <meta name="keywards" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>Documentation</title>
+
+    <!--css file-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./dist/images/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container my-3">
+      <div class="content flow">
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+        <p>paragraph</p>
+        <i class="far fa-grin-wink fa-3x"></i>
+        <i class="smile-bold fa-4x"></i>
+        <span class="home fa-5x"></span>
+      </div>
+    </div>
+
+    <!-- buttons -->
+
+    <div class="container my-3">
+      <div class="content flow">
+        <h3 class="mb-3">Buttons</h3>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <br />
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">
+          Secondary
+        </button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+      </div>
+    </div>
+
+    <!-- flex system -->
+    <div class="container my-3">
+      <div class="content flow">
+        <h3 class="mb-3">flex system:</h3>
+        <div class="row">
+          <div class="col"><div>lorem</div></div>
+          <div class="col"><div>lorem</div></div>
+        </div>
+        <div class="row g-2">
+          <div class="col"><div>lorem</div></div>
+          <div class="col"><div>lorem</div></div>
+          <div class="col"><div>lorem</div></div>
+        </div>
+        <div class="row g-2">
+          <div class="col col-12 col-sm-6 col-md-3"><div>lorem</div></div>
+          <div class="col col-12 col-sm-6 col-md-3"><div>lorem</div></div>
+          <div class="col col-12 col-sm-6 col-md-3"><div>lorem</div></div>
+          <div class="col col-12 col-sm-6 col-md-3"><div>lorem</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- grid system -->
+    <div class="container my-3">
+      <div class="content flow">
+        <h3 class="mb-3">grid system:</h3>
+        <div class="grid cols-sm-2 cols-md-3 cols-lg-4 gg-2">
+          <div class="cols col-span-sm-2">Lorem</div>
+          <div class="cols">lorem</div>
+          <div class="cols row-span-sm-3">lorem</div>
+          <div class="cols">lorem</div>
+          <div class="cols">lorem</div>
+          <div class="cols">lorem</div>
+          <div class="cols">lorem</div>
+          <div class="cols">lorem</div>
+          <div class="cols">lorem</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- form section -->
+    <div class="container my-3">
+      <div class="content flow">
+        <h3 class="mb-3">Forms</h3>
+        <section class="form_wrapper">
+          <div class="form_box">
+            <form class="form_container">
+              <div class="form_area grid cols-sm-2 gg-2">
+                <div class="form-group">
+                  <label for="name" class="form-label"
+                    >First Name <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control error"
+                    id=""
+                    placeholder="Enter Name"
+                  />
+                  <small class="error-msg">This is a required field.</small>
+                </div>
+                <div class="form-group">
+                  <label for="name" class="form-label"
+                    >Last Name <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control success"
+                    id=""
+                    placeholder="Enter Name"
+                  />
+                  <small class="error-msg">This is a required field.</small>
+                </div>
+              </div>
+
+              <div class="form_area">
+                <div class="form-group">
+                  <label for="Phone" class="form-label"
+                    >Phone <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control warning"
+                    id=""
+                    placeholder="Phone"
+                  />
+                  <small class="error-msg">This is a required field.</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label"
+                  >Email <span>*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id=""
+                  placeholder="Enter email"
+                />
+                <small class="error-msg">This is a required field.</small>
+              </div>
+
+              <div class="form_area grid cols-sm-3 gg-2">
+                <div class="form-group">
+                  <label for="City" class="form-label"
+                    >City <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    placeholder="Enter City"
+                  />
+                  <small class="error-msg">This is a required field.</small>
+                </div>
+                <div class="form-group">
+                  <label for="State" class="form-label"
+                    >State <span>*</span></label
+                  >
+                  <select class="form-control" id="">
+                    <option>State</option>
+                    <option>Kolkata</option>
+                  </select>
+                  <small class="error-msg">This is a required field.</small>
+                </div>
+                <div class="form-group">
+                  <label for="Zip" class="form-label">Zip <span>*</span></label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id=""
+                    placeholder="Enter Zip"
+                  />
+                  <small class="error-msg">This is a required field.</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="Address" class="form-label"
+                  >Address <span>*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Address"
+                />
+                <small class="error-msg">This is a required field.</small>
+              </div>
+
+              <div class="form_area grid cols-3 gg-2">
+                <div class="form-group">
+                  <label for="birthdate" class="form-label"
+                    >Date of birth</label
+                  >
+                  <select class="form-control" id="">
+                    <option>Month</option>
+                    <option>12</option>
+                  </select>
+                  <small class="error-msg">This is a required field.</small>
+                </div>
+                <div class="form-group">
+                  <!-- <label for="birthdate" class="form-label">&nbsp;</label> -->
+                  <select class="form-control" id="">
+                    <option>date</option>
+                    <option>12</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <!-- <label for="birthdate" class="form-label">&nbsp;</label> -->
+                  <select class="form-control" id="">
+                    <option>Year</option>
+                    <option>2020</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="Zip" class="form-label"
+                  >Since June 4, 2020, have you ordered from a meal delivery
+                  service and paid a delivery fee in California?
+                  <span>*</span></label
+                >
+                <div class="form-check">
+                  <input type="radio" id="option7" name="selector2" />
+                  <label for="option7">Yes</label>
+                  <div class="check"></div>
+                </div>
+                <div class="form-check">
+                  <input type="radio" id="option8" name="selector2" />
+                  <label for="option8">no</label>
+                  <div class="check"></div>
+                </div>
+                <small class="error-msg">This is a required field.</small>
+              </div>
+
+              <div class="form-group">
+                <label for="Zip" class="form-label"
+                  >Which meal delivery service did you pay a delivery fee from?
+                  <span>*</span></label
+                >
+
+                <div class="form_check">
+                  <label for="cbx" class="label-cbx">
+                    <input id="cbx" type="checkbox" class="invisible" />
+                    <div class="checkbox">
+                      <svg width="24px" height="24px" viewBox="0 0 20 20">
+                        <path
+                          d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                        ></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span>UberEats</span>
+                  </label>
+                </div>
+
+                <div class="form_check">
+                  <label for="cbx2" class="label-cbx">
+                    <input id="cbx2" type="checkbox" class="invisible" />
+                    <div class="checkbox">
+                      <svg width="24px" height="24px" viewBox="0 0 20 20">
+                        <path
+                          d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                        ></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span>DoorDash</span>
+                  </label>
+                </div>
+
+                <div class="form_check">
+                  <label for="cbx3" class="label-cbx">
+                    <input id="cbx3" type="checkbox" class="invisible" />
+                    <div class="checkbox">
+                      <svg width="24px" height="24px" viewBox="0 0 20 20">
+                        <path
+                          d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"
+                        ></path>
+                        <polyline points="4 11 8 15 16 6"></polyline>
+                      </svg>
+                    </div>
+                    <span>Grubhub</span>
+                  </label>
+                </div>
+                <small class="error-msg">This is a required field.</small>
+              </div>
+
+              <div class="form-group">
+                <a href="#" class="btn btn-primary">Continue</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!--js file-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

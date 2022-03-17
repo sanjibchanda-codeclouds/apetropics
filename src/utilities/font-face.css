@@ -1,0 +1,13 @@
+/*---------- font-face ----------
+---------------------------------*/
+@font-face {
+  font-family: "AzoSansUberW01-Regular";
+  src: url("../webfonts/AzoSansUberW01-Regular.eot");
+  src: url("../webfonts/AzoSansUberW01-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../webfonts/AzoSansUberW01-Regular.woff2") format("woff2"),
+    url("../webfonts/AzoSansUberW01-Regular.woff") format("woff"),
+    url("../webfonts/AzoSansUberW01-Regular.ttf") format("truetype"),
+    url("../webfonts/AzoSansUberW01-Regular.svg#AzoSansUberW01-Regular")
+      format("svg");
+}

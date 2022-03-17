@@ -1,0 +1,93 @@
+/*---------- colors ----------
+------------------------------*/
+.text-primary {
+  color: var(--primary) !important;
+}
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.text-accentLight {
+  color: var(--accentLight) !important;
+}
+.bg-accentLight {
+  background-color: var(--accentLight) !important;
+}
+.text-accentDark {
+  color: var(--accentDark) !important;
+}
+.bg-accentDark {
+  background-color: var(--accentDark) !important;
+}
+.text-success {
+  color: var(--success) !important;
+}
+.bg-success {
+  background-color: var(--success) !important;
+}
+.text-info {
+  color: var(--info) !important;
+}
+.bg-info {
+  background-color: var(--info) !important;
+}
+.text-warning {
+  color: var(--warning) !important;
+}
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+.text-danger {
+  color: var(--danger) !important;
+}
+.bg-danger {
+  background-color: var(--danger) !important;
+}
+.text-light {
+  color: var(--light) !important;
+}
+.bg-light {
+  background-color: var(--light) !important;
+}
+.text-dark100 {
+  color: var(--dark100) !important;
+}
+.bg-dark100 {
+  background-color: var(--dark100) !important;
+}
+.text-dark200 {
+  color: var(--dark200) !important;
+}
+.bg-dark200 {
+  background-color: var(--dark200) !important;
+}
+.text-dark300 {
+  color: var(--dark300) !important;
+}
+.bg-dark300 {
+  background-color: var(--dark300) !important;
+}
+.text-dark400 {
+  color: var(--dark400) !important;
+}
+.bg-dark400 {
+  background-color: var(--dark400) !important;
+}
+.text-dark500 {
+  color: var(--dark500) !important;
+}
+.bg-dark500 {
+  background-color: var(--dark500) !important;
+}
+
+.text-white {
+  color: var(--clr-white) !important;
+}
+.bg-white {
+  background-color: var(--clr-white) !important;
+}
+.text-black {
+  color: var(--clr-black) !important;
+}
+.bg-black {
+  background-color: var(--clr-black) !important;
+}

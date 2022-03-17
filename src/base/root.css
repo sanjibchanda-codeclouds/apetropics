@@ -1,0 +1,63 @@
+/*---------- root ----------
+----------------------------*/
+:root {
+  --clr-blue: hsl(216, 98%, 52%);
+  --clr-indigo: hsl(263, 90%, 51%);
+  --clr-purple: hsl(261, 51%, 51%);
+  --clr-pink: hsl(330, 67%, 52%);
+  --clr-red: hsl(354, 70%, 54%);
+  --clr-orange: hsl(27, 98%, 54%);
+  --clr-yellow: hsl(45, 100%, 51%);
+  --clr-green: hsl(152, 69%, 31%);
+  --clr-teal: hsl(162, 73%, 46%);
+  --clr-cyan: hsl(190, 90%, 50%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-gray: hsl(208, 7%, 46%);
+  --clr-gray-dark: hsl(210, 10%, 23%);
+
+  --primary: hsl(62, 99%, 39%);
+  --primaryDark: hsl(62, 99%, 29%);
+  --accentLight: hsl(0, 0%, 100%);
+  --accentDark: hsl(0, 0%, 19%);
+
+  --border: hsl(0, 0%, 30%);
+
+  --success: hsl(152, 69%, 31%);
+  --info: hsl(190, 90%, 50%);
+  --warning: hsl(45, 100%, 51%);
+  --danger: hsl(354, 70%, 54%);
+  --light: hsl(210, 7%, 95%);
+  --dark100: hsl(0, 0%, 37%);
+  --dark200: hsl(0, 0%, 16%);
+  --dark300: hsl(0, 0%, 13%);
+  --dark400: hsl(0, 0%, 7%);
+  --dark500: hsl(0, 0%, 0%);
+
+  --fw-thin: 100;
+  --fw-exlight: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-smbold: 600;
+  --fw-bold: 700;
+  --fw-exbold: 800;
+  --fw-black: 900;
+
+  --ff-base: "Rubik", sans-serif;
+  --ff-heading: "AzoSansUberW01-Regular";
+}
+
+@custom-media --viewport-sm (min-width: 36rem);
+@custom-media --viewport-md (min-width: 48rem);
+@custom-media --viewport-lg (min-width: 62rem);
+@custom-media --viewport-xl (min-width: 75rem);
+@custom-media --viewport-xxl (min-width: 87.5rem);
+
+@custom-media --viewport-max-sm (max-width: 35.938rem);
+@custom-media --viewport-max-md (max-width: 47.938rem);
+@custom-media --viewport-max-lg (max-width: 61.938rem);
+@custom-media --viewport-max-xl (max-width: 74.938rem);
+@custom-media --viewport-max-xxl (max-width: 86.938rem);
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
