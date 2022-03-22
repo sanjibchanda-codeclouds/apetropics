@@ -2309,6 +2309,10 @@ p {
 .section_footer .footer_box {
     --flow-spacer: 1.25rem
   }
+.section_footer .footer_box .logo {
+      max-width: 260px;
+      width: 100%;
+    }
 .section_footer .footer_box .title {
       font-size: 1.25rem;
       font-weight: 700;
